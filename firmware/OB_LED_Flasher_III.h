@@ -67,7 +67,7 @@ void LED_Blinker(int countb, int flashRateOn, int flashRateOff){
 
 //-----------------------  Red flash    -----------------------
 
-void LED_Red_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Red_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 255;
         lgreen = 0;
@@ -79,7 +79,7 @@ void LED_Red_Flash(int count, int fRateOn, int fRateOff) {
 
 //-----------------------  Green flash  -----------------------
 
-void LED_Green_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Green_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 0;
         lgreen = 255;
@@ -90,7 +90,7 @@ void LED_Green_Flash(int count, int fRateOn, int fRateOff) {
         
 //-----------------------  Blue flash -----------------------
 
-void LED_Blue_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Blue_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 0;
         lgreen = 0;
@@ -101,7 +101,7 @@ void LED_Blue_Flash(int count, int fRateOn, int fRateOff) {
         
 //-----------------------  Yellow flash -----------------------
  
-void LED_Yellow_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Yellow_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 255;
         lgreen = 255;
@@ -112,7 +112,7 @@ void LED_Yellow_Flash(int count, int fRateOn, int fRateOff) {
         
 //-----------------------  Orange flash -----------------------
  
-void LED_Orange_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Orange_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 255;
         lgreen = 100;
@@ -123,7 +123,7 @@ void LED_Orange_Flash(int count, int fRateOn, int fRateOff) {
         
 //-----------------------  Cyan flash -----------------------
  
-void LED_Cyan_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Cyan_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 0;
         lgreen = 255;
@@ -134,7 +134,7 @@ void LED_Cyan_Flash(int count, int fRateOn, int fRateOff) {
         
 //-----------------------  Magenta flash  -----------------------
  
-void LED_Magenta_Flash(int count, int fRateOn, int fRateOff) {
+void LED_Magenta_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
         lred = 255;
         lgreen = 0;
@@ -145,7 +145,7 @@ void LED_Magenta_Flash(int count, int fRateOn, int fRateOff) {
         
 //-----------------------  White flash  -----------------------
  
-void LED_White_Flash(int count, int fRateOn, int fRateOff) {
+void LED_White_Flash(int count=3, int fRateOn=9, int fRateOff=4) {
 
 // scales brightness of all three colors, 0-255.
 // the following sets the RGB LED brightness to 25%:
@@ -171,7 +171,7 @@ void LED_White_Flash(int count, int fRateOn, int fRateOff) {
 
 //----------------------- Rainbow Flash -----------------------
 
-void LED_Rainbow_Flash(int count) {
+void LED_Rainbow_Flash(int count=3) {
 
         RGB.control(true);   // take control of the RGB LED        
 
